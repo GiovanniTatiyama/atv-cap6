@@ -1,0 +1,22 @@
+﻿version: '3.4'
+
+services:
+  yourproject:
+    image: yourproject
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=123456789
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/aspnetapp.pfx
+    volumes:
+      - ~/.aspnet/https:/https:ro
+      - dataprotection:/root/.aspnet/DataProtection-Keys
+
+volumes:
+  dataprotection:

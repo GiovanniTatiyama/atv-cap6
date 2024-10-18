@@ -1,0 +1,40 @@
+@model List<Trafego1.Models.Semaforos>
+
+@{
+    ViewData["Title"] = "Lista de Semáforos";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Criar Novo</a>
+</p>
+
+<hr />
+
+<h3>Detalhes dos Semáforos</h3>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Semáforos Id</th>
+        <th>Localização</th>
+        <th>Fluxo de Tráfego</th>
+        <th>Ações</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var semaforo in Model)
+    {
+        <tr>
+            <td>@semaforo.SemaforosId</td>
+            <td>@semaforo.Localizacao</td>
+            <td>@semaforo.FluxoTrafego</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@semaforo.SemaforosId" class="btn btn-warning">Editar</a>
+                <a asp-action="Delete" asp-route-id="@semaforo.SemaforosId" class="btn btn-danger">Excluir</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

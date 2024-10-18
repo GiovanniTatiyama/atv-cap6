@@ -1,0 +1,57 @@
+@model Trafego1.Models.Trafego
+
+@{
+    ViewData["Title"] = "Delete Trafego";
+}
+
+<h2>Delete Trafego</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Trafego</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TrafegoId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TrafegoId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Rotas)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Rotas)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OtimizacaoRotas)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OtimizacaoRotas)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AnaliseVias)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AnaliseVias)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AnaliseCongestionamento)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AnaliseCongestionamento)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CondicoesClimaticas)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CondicoesClimaticas)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="TrafegoId" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>

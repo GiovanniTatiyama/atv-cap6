@@ -1,0 +1,44 @@
+@model Trafego1.Models.Notificacoes
+
+@{
+    ViewData["Title"] = "Editar Notificação";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<h3>Editar Notificação</h3>
+
+<form asp-action="Edit">
+    <input type="hidden" asp-for="NotificacoesId" />
+    <div class="form-group">
+        <label asp-for="ServicoEmergencia" class="control-label"></label>
+        <input asp-for="ServicoEmergencia" class="form-control" />
+        <span asp-validation-for="ServicoEmergencia" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ServicoPolicial" class="control-label"></label>
+        <input asp-for="ServicoPolicial" class="form-control" />
+        <span asp-validation-for="ServicoPolicial" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ServicoSaude" class="control-label"></label>
+        <input asp-for="ServicoSaude" class="form-control" />
+        <span asp-validation-for="ServicoSaude" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ServicoCliente" class="control-label"></label>
+        <input asp-for="ServicoCliente" class="form-control" />
+        <span asp-validation-for="ServicoCliente" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Salvar" class="btn btn-primary" />
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Voltar para a Lista</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

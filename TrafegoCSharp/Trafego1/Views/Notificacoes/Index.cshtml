@@ -1,0 +1,44 @@
+@model List<Trafego1.Models.Notificacoes>
+
+@{
+    ViewData["Title"] = "Lista de Notificações";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Criar Novo</a>
+</p>
+
+<hr />
+
+<h3>Detalhes das Notificações</h3>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Notificações Id</th>
+        <th>Serviço de Emergência</th>
+        <th>Serviço Policial</th>
+        <th>Serviço de Saúde</th>
+        <th>Serviço de Cliente</th>
+        <th>Ações</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var notificacao in Model)
+    {
+        <tr>
+            <td>@notificacao.NotificacoesId</td>
+            <td>@notificacao.ServicoEmergencia</td>
+            <td>@notificacao.ServicoPolicial</td>
+            <td>@notificacao.ServicoSaude</td>
+            <td>@notificacao.ServicoCliente</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@notificacao.NotificacoesId" class="btn btn-warning">Editar</a>
+                <a asp-action="Delete" asp-route-id="@notificacao.NotificacoesId" class="btn btn-danger">Excluir</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

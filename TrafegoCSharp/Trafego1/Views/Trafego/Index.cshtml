@@ -1,0 +1,46 @@
+@model List<Trafego1.Models.Trafego>
+
+@{
+    ViewData["Title"] = "Lista de Tráfego";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Criar Novo</a>
+</p>
+
+<hr />
+
+<h3>Detalhes do Tráfego</h3>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Trafego Id</th>
+        <th>Rotas</th>
+        <th>Otimização de Rotas</th>
+        <th>Análise de Vias</th>
+        <th>Análise de Congestionamento</th>
+        <th>Condições Climáticas</th>
+        <th>Ações</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var trafego in Model)
+    {
+        <tr>
+            <td>@trafego.TrafegoId</td>
+            <td>@trafego.Rotas</td>
+            <td>@trafego.OtimizacaoRotas</td>
+            <td>@trafego.AnaliseVias</td>
+            <td>@trafego.AnaliseCongestionamento</td>
+            <td>@trafego.CondicoesClimaticas</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@trafego.TrafegoId" class="btn btn-warning">Editar</a>
+                <a asp-action="Delete" asp-route-id="@trafego.TrafegoId" class="btn btn-danger">Excluir</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

@@ -1,0 +1,78 @@
+@model Trafego1.Models.Trafego
+
+@{
+ViewData["Title"] = "Trafego";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Save">
+    <div class="form-group">
+        <label asp-for="TrafegoId" class="control-label"></label>
+        <input asp-for="TrafegoId" class="form-control" />
+        <span asp-validation-for="TrafegoId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Rotas" class="control-label"></label>
+        <input asp-for="Rotas" class="form-control" />
+        <span asp-validation-for="Rotas" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="OtimizacaoRotas" class="control-label"></label>
+        <input asp-for="OtimizacaoRotas" class="form-control" />
+        <span asp-validation-for="OtimizacaoRotas" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="AnaliseVias" class="control-label"></label>
+        <input asp-for="AnaliseVias" class="form-control" />
+        <span asp-validation-for="AnaliseVias" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="AnaliseCongestionamento" class="control-label"></label>
+        <input asp-for="AnaliseCongestionamento" class="form-control" />
+        <span asp-validation-for="AnaliseCongestionamento" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="CondicoesClimaticas" class="control-label"></label>
+        <input asp-for="CondicoesClimaticas" class="form-control" />
+        <span asp-validation-for="CondicoesClimaticas" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-primary" />
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+<hr />
+
+<h3>Detalhes do Tráfego</h3>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Trafego Id</th>
+        <th>Rotas</th>
+        <th>Otimização de Rotas</th>
+        <th>Análise de Vias</th>
+        <th>Análise de Congestionamento</th>
+        <th>Condições Climáticas</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>@Model.TrafegoId</td>
+        <td>@Model.Rotas</td>
+        <td>@Model.OtimizacaoRotas</td>
+        <td>@Model.AnaliseVias</td>
+        <td>@Model.AnaliseCongestionamento</td>
+        <td>@Model.CondicoesClimaticas</td>
+    </tr>
+    </tbody>
+</table>
+
+@section Scripts {
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,52 @@
+@model Trafego1.Models.Notificacoes
+
+@{
+    ViewData["Title"] = "Excluir Notificação";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<h3>Excluir Notificação</h3>
+
+<div>
+    <h4>Você tem certeza que deseja excluir esta notificação?</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Notificações Id
+        </dt>
+        <dd class="col-sm-10">
+            @Model.NotificacoesId
+        </dd>
+        <dt class="col-sm-2">
+            Serviço de Emergência
+        </dt>
+        <dd class="col-sm-10">
+            @Model.ServicoEmergencia
+        </dd>
+        <dt class="col-sm-2">
+            Serviço Policial
+        </dt>
+        <dd class="col-sm-10">
+            @Model.ServicoPolicial
+        </dd>
+        <dt class="col-sm-2">
+            Serviço de Saúde
+        </dt>
+        <dd class="col-sm-10">
+            @Model.ServicoSaude
+        </dd>
+        <dt class="col-sm-2">
+            Serviço ao Cliente
+        </dt>
+        <dd class="col-sm-10">
+            @Model.ServicoCliente
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="NotificacoesId" />
+        <input type="submit" value="Excluir" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>

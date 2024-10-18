@@ -1,0 +1,34 @@
+@model Trafego1.Models.Semaforos
+
+@{
+    ViewData["Title"] = "Editar Semáforo";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<h4>Editar Semáforo</h4>
+<hr />
+
+<form asp-action="Edit">
+    <div class="form-group">
+        <label asp-for="SemaforosId" class="control-label"></label>
+        <input asp-for="SemaforosId" class="form-control" readonly />
+    </div>
+    <div class="form-group">
+        <label asp-for="Localizacao" class="control-label"></label>
+        <input asp-for="Localizacao" class="form-control" />
+        <span asp-validation-for="Localizacao" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="FluxoTrafego" class="control-label"></label>
+        <input asp-for="FluxoTrafego" class="form-control" />
+        <span asp-validation-for="FluxoTrafego" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Salvar" class="btn btn-primary" />
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Voltar para a Lista</a>
+</div>
