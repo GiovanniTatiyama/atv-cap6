@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Trafego1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d30497ac6c45c7906610de0d90defce5c3b48391")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8cfc12686d1b226127bab177cda2973e3288f535")]
 [assembly: System.Reflection.AssemblyProductAttribute("Trafego1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Trafego1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
