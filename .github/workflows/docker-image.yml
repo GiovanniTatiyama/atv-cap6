@@ -1,0 +1,68 @@
+# Nome do workflow
+name: Continuous Integration
+
+# Eventos que disparam o workflow: push ou pull request na branch 'main'
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+# Definindo os jobs
+jobs:
+  # Job de build e testes
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Baixa o código do repositório
+      - name: Checkout the code
+        uses: actions/checkout@v3
+
+      # Configura o ambiente .NET Core
+      - name: Setup .NET Core SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '7.0.x'  # Versão do .NET Core SDK
+
+      # Restaura as dependências do projeto
+      - name: Restore dependencies
+        run: dotnet restore
+
+      # Compila o projeto
+      - name: Build the project
+        run: dotnet build --configuration Release --no-restore
+
+      # Executa os testes
+      - name: Run unit tests
+        run: dotnet test --no-build --verbosity normal
+
+  # Job de deploy (condicional ao sucesso do build)
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build  # Só roda o deploy se o job 'build' foi bem-sucedido
+
+    steps:
+      # Baixa o código novamente
+      - name: Checkout the code
+        uses: actions/checkout@v3
+
+      # Configura o ambiente .NET Core
+      - name: Setup .NET Core SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '7.0.x'
+
+      # Publica o projeto
+      - name: Publish the project
+        run: dotnet publish --configuration Release --output ./publish
+
+      # Exemplo de deploy para o Azure Web App
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: 'NomeDoSeuAppAzure'  # Substitua com o nome do App Service no Azure
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}  # Secret configurado no GitHub
+          package: ./publish
