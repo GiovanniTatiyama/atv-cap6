@@ -9,87 +9,87 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Trafego1
 build_property.RootNamespace = Trafego1
-build_property.ProjectDir = C:\Users\User\RiderProjects\Trafego1\Trafego1\
+build_property.ProjectDir = E:\FIAP\Fase 6\Atividade Cap 6\projetos\TrafegoCSharp\Trafego1\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\User\RiderProjects\Trafego1\Trafego1
+build_property.MSBuildProjectDirectory = E:\FIAP\Fase 6\Atividade Cap 6\projetos\TrafegoCSharp\Trafego1
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/User/RiderProjects/Trafego1/Trafego1/Views/Home/Index.cshtml]
+[E:/FIAP/Fase 6/Atividade Cap 6/projetos/TrafegoCSharp/Trafego1/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/RiderProjects/Trafego1/Trafego1/Views/Home/Privacy.cshtml]
+[E:/FIAP/Fase 6/Atividade Cap 6/projetos/TrafegoCSharp/Trafego1/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/RiderProjects/Trafego1/Trafego1/Views/Notificacoes/Create.cshtml]
+[E:/FIAP/Fase 6/Atividade Cap 6/projetos/TrafegoCSharp/Trafego1/Views/Notificacoes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2Fjb2VzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/RiderProjects/Trafego1/Trafego1/Views/Notificacoes/Delete.cshtml]
+[E:/FIAP/Fase 6/Atividade Cap 6/projetos/TrafegoCSharp/Trafego1/Views/Notificacoes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2Fjb2VzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/RiderProjects/Trafego1/Trafego1/Views/Notificacoes/Edit.cshtml]
+[E:/FIAP/Fase 6/Atividade Cap 6/projetos/TrafegoCSharp/Trafego1/Views/Notificacoes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2Fjb2VzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/RiderProjects/Trafego1/Trafego1/Views/Notificacoes/Index.cshtml]
+[E:/FIAP/Fase 6/Atividade Cap 6/projetos/TrafegoCSharp/Trafego1/Views/Notificacoes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2Fjb2VzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/RiderProjects/Trafego1/Trafego1/Views/Semaforos/Create.cshtml]
+[E:/FIAP/Fase 6/Atividade Cap 6/projetos/TrafegoCSharp/Trafego1/Views/Semaforos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VtYWZvcm9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/RiderProjects/Trafego1/Trafego1/Views/Semaforos/Delete.cshtml]
+[E:/FIAP/Fase 6/Atividade Cap 6/projetos/TrafegoCSharp/Trafego1/Views/Semaforos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VtYWZvcm9zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/RiderProjects/Trafego1/Trafego1/Views/Semaforos/Edit.cshtml]
+[E:/FIAP/Fase 6/Atividade Cap 6/projetos/TrafegoCSharp/Trafego1/Views/Semaforos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VtYWZvcm9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/RiderProjects/Trafego1/Trafego1/Views/Semaforos/Index.cshtml]
+[E:/FIAP/Fase 6/Atividade Cap 6/projetos/TrafegoCSharp/Trafego1/Views/Semaforos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VtYWZvcm9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/RiderProjects/Trafego1/Trafego1/Views/Shared/Error.cshtml]
+[E:/FIAP/Fase 6/Atividade Cap 6/projetos/TrafegoCSharp/Trafego1/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/RiderProjects/Trafego1/Trafego1/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/FIAP/Fase 6/Atividade Cap 6/projetos/TrafegoCSharp/Trafego1/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/RiderProjects/Trafego1/Trafego1/Views/Trafego/Create.cshtml]
+[E:/FIAP/Fase 6/Atividade Cap 6/projetos/TrafegoCSharp/Trafego1/Views/Trafego/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhZmVnb1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/RiderProjects/Trafego1/Trafego1/Views/Trafego/Delete.cshtml]
+[E:/FIAP/Fase 6/Atividade Cap 6/projetos/TrafegoCSharp/Trafego1/Views/Trafego/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhZmVnb1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/RiderProjects/Trafego1/Trafego1/Views/Trafego/Edit.cshtml]
+[E:/FIAP/Fase 6/Atividade Cap 6/projetos/TrafegoCSharp/Trafego1/Views/Trafego/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhZmVnb1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/RiderProjects/Trafego1/Trafego1/Views/Trafego/Index.cshtml]
+[E:/FIAP/Fase 6/Atividade Cap 6/projetos/TrafegoCSharp/Trafego1/Views/Trafego/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhZmVnb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/RiderProjects/Trafego1/Trafego1/Views/_ViewImports.cshtml]
+[E:/FIAP/Fase 6/Atividade Cap 6/projetos/TrafegoCSharp/Trafego1/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/RiderProjects/Trafego1/Trafego1/Views/_ViewStart.cshtml]
+[E:/FIAP/Fase 6/Atividade Cap 6/projetos/TrafegoCSharp/Trafego1/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/RiderProjects/Trafego1/Trafego1/Views/Shared/_Layout.cshtml]
+[E:/FIAP/Fase 6/Atividade Cap 6/projetos/TrafegoCSharp/Trafego1/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-49iee2now4

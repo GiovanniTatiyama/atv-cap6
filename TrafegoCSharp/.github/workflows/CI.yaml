@@ -1,0 +1,13 @@
+name: Continuous Integration
+
+on:
+    push:
+        branches: "features/**"
+
+jobs:
+    tests:
+        runs-on: ubuntu-latest
+        steps:
+        -   name: Git Checkout
+            uses: actions/checkout@v4
+        
