@@ -28,13 +28,3 @@ Crie um banco de dados no seu sistema ou utilize uma instância em memória.
 ### CI/CD com GitHub Actions
     O repositório contém um workflow de CI/CD configurado no arquivo .github/workflows/CI.yaml. Este workflow automatiza as etapas de build, teste e deploy do aplicativo.
 
-
-
-### Notas sobre o README
-- **Estrutura**: O README fornece uma visão geral clara do projeto, incluindo tecnologias, estrutura de diretórios e instruções de instalação.
-- **Docker Compose**: Instruções para executar a aplicação usando Docker Compose, incluindo a construção da imagem e acesso ao aplicativo.
-- **CI/CD**: Breve explicação sobre o uso do GitHub Actions para automação, com ênfase no arquivo de configuração.
-- **Contribuições**: Seção para encorajar contribuições de outros desenvolvedores.
-
-Sinta-se à vontade para ajustar e expandir conforme necessário para atender às suas necessidades específicas!
-
